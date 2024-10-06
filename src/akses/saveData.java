@@ -3,7 +3,6 @@ package akses;
 import Hotel.Hotel;
 import Hotel.Kamar;
 
-import javax.lang.model.element.Name;
 
 public class saveData implements save {
     String Jeniskamar;
