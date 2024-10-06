@@ -9,33 +9,33 @@ public class Main {
         Admin admin = new Admin();
         Customer customer = new Customer();
 
-        System.out.println("pilih masuk");
-        System.out.println("1. masuk sebagai admin");
-        System.out.println("2. masuk pengguna ");
-        System.out.print("pilih: ");
+        System.out.println("Pilih Opsi");
+        System.out.println("1. Masuk Sebagai Admin");
+        System.out.println("2. Masuk Pengguna ");
+        System.out.print("Pilih: ");
         int select = input.nextInt();
         input.nextLine();
         switch (select) {
             case 1:
                 System.out.println("======Login======");
-                System.out.print("masukan username: ");
+                System.out.print("Masukan Username: ");
                 String Nama = input.nextLine();
-                System.out.print("Masukkan password: ");
+                System.out.print("Masukkan Password: ");
                 String Password = input.nextLine();
-                if (!Nama.equals("hemy") && !Password.equals("admin123")) {
-                    System.out.println("Username atau password salah");
+                if (!Nama.equals("Helmyadmin") || !Password.equals("admin123")) {
+                    System.out.println("Username/Password salah!");
                     return;
                 }
-                System.out.println("berhasil masuk");
+                System.out.println("Berhasil Masuk!");
                 admin.memilih();
 
                 break;
             case 2:
-                System.out.println("Masukkan pengguna ");
+                System.out.println("Masukkan Pengguna ");
                 customer.memilih();
                 break;
             default:
-                System.out.println("sytax error");
+                System.out.println("syntax error");
                 break;
         }
     }
